@@ -14,4 +14,6 @@ use App\Http\Controllers\AmbilDataController;
 |
 */
 
-Route::get('/', [AmbilDataController::class, 'index']);
+Route::get('/', function () {
+    return view('index');
+});
